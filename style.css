@@ -212,6 +212,11 @@ header{
     margin-top: 20px;
     border-radius: 5px;
     color: black;
+    transition: 0.5s;
+}
+.more-about-text a:hover{
+    background-color: rgb(139, 139, 58);
+    color: white;
 }
 .about-single-items-parent{
     display: grid;
@@ -283,6 +288,66 @@ header{
     background-color: wheat;
 }
 
+/* contact section code start here  */
+.contact-section{
+    background-image: linear-gradient(#3958a25e, #4089c7), url("image/contact.jpg");
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+form{
+    background-color: #2e357a;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 50px 60px;
+    border: 6px solid #4497d3;
+    border-radius: 10px;
+}
+form h2{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+}
+form p{
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+    letter-spacing: 0.1em;
+}
+.form-input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 50px 0;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    border-bottom: 3px solid #4497d3;
+    font-size: 18px;
+}
+.form-input::placeholder{
+    color: #4497d3;
+    font-size: 18px;
+    font-weight: bold;
+}
+.submit-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 5px 40px;
+    font-size: 20px;
+    background: none;
+    color: white;
+    outline-style: ridge;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.submit-btn:hover{
+    background-color: #16213e;
+}
+
 
 
 
@@ -302,6 +367,9 @@ header{
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px;
         width: 100%;
+    }
+    .single-service{
+        margin: 5px 20px;
     }
 
 /* smart area code start  */
@@ -343,7 +411,16 @@ header{
     .single-advice h3{
         margin-top: 50px;
     }
+/* Start contact section code  */
+    form{
+        background-color: #2e357a;
+        max-width: 90%;
+        padding: 20px 30px;
+    }
 }
+
+
+
 @media only screen and (min-width: 689px) and (max-width: 1099px) {
 /* service section code start  */
     .service-parent{
@@ -388,6 +465,12 @@ header{
     }
     .advice-icons a{
         margin: 10px 5px;
+    }
+/* Start contact section code  */
+    form{
+        background-color: #2e357a;
+        max-width: 90%;
+        padding: 40px 50px;
     }
 }
 
